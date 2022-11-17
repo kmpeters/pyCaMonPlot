@@ -22,4 +22,12 @@ fig = px.line(df, x="datetime", y="value")
 # Choose a different theme
 #!fig.layout.template = 'plotly_white'
 fig.layout.template = 'ggplot2'
+
+fig.update_layout(
+  title={
+    'text': "Cap Sensor Voltage vs Time<br><sup>Recorded by the LabJack T8 while idle</sup>",
+    'xanchor': 'center',
+    'yanchor': 'top'},
+  xaxis_title="Time",
+  yaxis_title="Voltage (V)")
 fig.show()
