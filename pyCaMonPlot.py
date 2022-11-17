@@ -17,5 +17,6 @@ df.rename(columns={'time':'datetime'}, inplace=True)
 
 # Create the plot
 #!fig = px.bar(df, x="datetime", y="value")
-fig = px.line(df, x="datetime", y="value")
+#!fig = px.line(df, x="datetime", y="value")
+fig = px.area(df, x="datetime", y="value")
 fig.show()
