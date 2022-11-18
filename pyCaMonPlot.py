@@ -25,8 +25,9 @@ fig.layout.template = 'ggplot2'
 
 fig.update_layout(
   title={
+    'text': "Cap Sensor Voltage vs Time<br><sup>Recorded by the LabJack T8 while idle; 10 ms poll cycle time; SVAL = 10</sup>",
     #'text': "Cap Sensor Voltage vs Time<br><sup>Recorded by the LabJack T8 while idle</sup>",
-    'text': "Cap Sensor Voltage vs Time<br><sup>Recorded by the measComp USB-2408-2AO while idle</sup>",
+    #'text': "Cap Sensor Voltage vs Time<br><sup>Recorded by the measComp USB-2408-2AO while idle</sup>",
     'xanchor': 'center',
     'yanchor': 'top'},
   xaxis_title="Time",
